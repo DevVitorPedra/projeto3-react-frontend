@@ -4,7 +4,7 @@ import devinhouse from '../../assets/images/devinhouse.png'
 export const StyledHeader = styled.header`
      width:100vw;
     height:140px;
- background:rgba(0,0,0,0.1);
+ 
     background-size:cover;
    display:flex;
    flex-direction:column;
