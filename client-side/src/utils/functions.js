@@ -33,3 +33,39 @@ export const getUser = async (id) =>{
       return result
 
 }
+export const updateUser = async (id, body)=>{
+    const reqBody = body
+    const url = `https://warm-inlet-55774.herokuapp.com/api/users/${id}`
+    const result = await axios.patch(url,reqBody).then((response)=>{
+        console.log(response.data)
+                  return response
+      }).catch((error)=>{
+          console.log(error.message)
+          return error
+      })
+      return result
+
+}
+export const getExpensesId = async (id) => {
+   
+    const url = `https://warm-inlet-55774.herokuapp.com/api/finance/ids/${id}`
+    const result = await axios.get(url).then((response)=>{
+        console.log(response.data)
+                  return response.data
+      }).catch((error)=>{
+          console.log(error.message)
+          return error
+      })
+      return result
+    }
+    export const deleteExpense = async(userid,financeid) => {
+        const url = `https://warm-inlet-55774.herokuapp.com/api/finance/${userid}/${financeid}`
+        const result = await axios.delete(url).then((response)=>{
+            console.log(response.data)
+                      return response.data
+          }).catch((error)=>{
+              console.log(error.message)
+              return error
+          })
+          return result 
+    }

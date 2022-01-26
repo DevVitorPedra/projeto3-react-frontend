@@ -32,11 +32,11 @@ export const StyledFormTitle = styled.h2`
 `
 export const StyledInput = styled.input`
     width:90%;
-    height:20px;
+    height:15px;
     
     @media(min-width:600px){
           font-size:18px;
-          height:30px;
+          height:25px;
           }
     border-top:none;
     border-left:none;
@@ -53,7 +53,7 @@ export const StyledInput = styled.input`
 export const StyledFormBtn = styled.button`
     width:100px;
     height:35px;
-    background-color:rgba(110,140,110);
+    background-color:rgba(0,0,255,0.5);
     color:white;
     border-radius:12px;
     &:hover{
@@ -63,4 +63,17 @@ export const StyledFormBtn = styled.button`
         background-color:white;
         font-weight:bold;
     }
+`
+export const StyledExpenseCard = styled.div`
+color:white;
+padding:20px;
+    width:200px;
+    height:auto;
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    font-size:16px;
+    background-color:rgba(0,0,0,0.7);
+
+
 `

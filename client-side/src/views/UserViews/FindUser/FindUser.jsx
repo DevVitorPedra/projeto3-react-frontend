@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { RiHqLine } from 'react-icons/ri'
-import { getUser } from '../../utils/functions'
-import { StyledFormBtn, StyledInput, StyledInputContainer, StyledUserCreateForm } from '../UserCreate/Styled'
+import { getUser } from '../../../utils/functions'
+import { StyledFormBtn, StyledInput, StyledInputContainer, StyledUserCreateForm } from '../../Styled'
 
 export default function FindUser() {
 
@@ -23,8 +23,8 @@ export default function FindUser() {
             {(!data) ?
                 (<StyledInputContainer>
                     <h1 style={{ "color": "white" }}>Procurar Usuário</h1>
-                    <label style={{ "color": "white" }}>Id</label>
                     <StyledInput onChange={(e) => handleChange(e.target.value)} name="id" value={id} placeholder="Pesquisar" type="text" />
+                    <label style={{ "color": "white" }}>Id</label>
                     <StyledFormBtn onClick={(e) => {
                         e.preventDefault()
                         if(id===''){

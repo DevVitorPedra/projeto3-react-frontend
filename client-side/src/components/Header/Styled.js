@@ -32,10 +32,12 @@ export const MenuBar = styled.nav`
     align-items:center;
 
 `
-export const MenuButton = styled.button`
+export const MenuButton = styled.div`
     width:100px;
     height:28px;
     border-radius:20px;
+    display:flex;
+    justify-content:center;
     font-size:20px;
     border:none;
     background-color:rgba(20,20,20,0.2);
